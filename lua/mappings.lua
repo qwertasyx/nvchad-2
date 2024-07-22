@@ -43,3 +43,8 @@ end, {
   expr = true,
   noremap = true,
 })
+
+-- just for testing
+map("n", "<leader>lhs", function()
+  print "hello"
+end, { desc = "🌈 just a lua test 🌈 " })
