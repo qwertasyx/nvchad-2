@@ -35,7 +35,8 @@ end, { desc = "format files" })
 -- Copilot
 map("i", "<C-l>", function()
   vim.fn.feedkeys(vim.fn["copilot#Accept"](), "")
-end, { desc = "Copilot Accept" }, {
+end, {
+  desc = "Copilot Accept",
   replace_keycodes = true,
   nowait = true,
   silent = true,
