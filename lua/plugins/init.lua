@@ -62,4 +62,12 @@ return {
       -- or run <leader>ch to see copilot mapping section
     end,
   },
+  {
+    -- this plugin should not be neccesary, but somehow the 0.10 commentstring does not work in svelte file for the html part
+    "numToStr/Comment.nvim",
+    lazy = false,
+    config = function()
+      require "configs.comment"
+    end,
+  },
 }
