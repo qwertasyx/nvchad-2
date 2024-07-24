@@ -5,7 +5,7 @@ local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 -- map("i", "jk", "<ESC>", { desc = "escape insert mode" })
-map("i", "<C-s>", "<ECS>:w<CR>", { desc = "Save in insert mode" })
+map("i", "<C-s>", "<ESC>:w<CR>", { desc = "Save in insert mode" })
 
 map("n", "<C-n>", ":Telescope git_files <CR>", { desc = "Telescope Files" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
