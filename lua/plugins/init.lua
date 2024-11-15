@@ -26,6 +26,7 @@ return {
         "svelte-language-server",
         "tailwindcss-language-server",
         "rust-analyzer",
+        "dockerls",
       },
     },
   },
