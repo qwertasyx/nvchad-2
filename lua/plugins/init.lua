@@ -27,6 +27,7 @@ return {
         "tailwindcss-language-server",
         "rust-analyzer",
         "dockerls",
+        "pyright",
       },
     },
   },
@@ -44,6 +45,7 @@ return {
         "javascript",
         "typescript",
         "svelte",
+        "python",
         -- low level
         "rust",
       },
