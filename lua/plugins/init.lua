@@ -28,6 +28,7 @@ return {
         "rust-analyzer",
         "dockerls",
         "pyright",
+        "black",
       },
     },
   },
