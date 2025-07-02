@@ -21,6 +21,7 @@ return {
         "stylua",
         "html-lsp",
         "css-lsp",
+        "json-lsp",
         "prettier",
         "typescript-language-server",
         "svelte-language-server",
@@ -72,4 +73,5 @@ return {
       require "configs.comment"
     end,
   },
+  "b0o/schemastore.nvim",
 }
