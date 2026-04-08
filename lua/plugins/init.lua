@@ -12,28 +12,8 @@ return {
       require "configs.lspconfig"
     end,
   },
-  --
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "stylua",
-        "html-lsp",
-        "css-lsp",
-        "json-lsp",
-        "prettier",
-        "typescript-language-server",
-        "svelte-language-server",
-        "tailwindcss-language-server",
-        "rust-analyzer",
-        "dockerls",
-        "pyright",
-        "black",
-      },
-    },
-  },
-  --
+
+  -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -53,7 +33,8 @@ return {
       },
     },
   },
-  --
+
+  -- github
   {
     "github/copilot.vim",
     lazy = false,
@@ -65,13 +46,18 @@ return {
       -- or run <leader>ch to see copilot mapping section
     end,
   },
-  {
-    -- this plugin should not be neccesary, but somehow the 0.10 commentstring does not work in svelte file for the html part
-    "numToStr/Comment.nvim",
-    lazy = false,
-    config = function()
-      require "configs.comment"
-    end,
-  },
+
+  -- test new blink
+  -- { import = "nvchad.blink.lazyspec" },
+
+  -- {
+  -- 	"nvim-treesitter/nvim-treesitter",
+  -- 	opts = {
+  -- 		ensure_installed = {
+  -- 			"vim", "lua", "vimdoc",
+  --      "html", "css"
+  -- 		},
+  -- 	},
+  -- },
   "b0o/schemastore.nvim",
 }
